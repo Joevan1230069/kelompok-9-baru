@@ -1,0 +1,64 @@
+RUMAH SAKIT PERMATA ASRI - PUBLIC DEPLOYMENT
+============================================
+
+PORTAL YANG TERPISAH
+--------------------
+Staff Portal:
+  /login.php
+
+Patient Registration Portal:
+  /patient/
+
+Keduanya menggunakan database yang sama. Pendaftaran dari /patient/ masuk ke
+patient_registration_requests dan bisa dilihat oleh Admin/Admisi dari menu
+Registrasi Online.
+
+A. XAMPP LOKAL
+--------------
+Tidak ada perubahan cara pakai.
+Taruh project di htdocs lalu buka:
+  http://localhost/.../login.php
+  http://localhost/.../patient/
+
+B. PUBLIK - RAILWAY + GITHUB
+----------------------------
+Project ini sudah punya Dockerfile dan config/database.php yang membaca
+environment variable Railway/MySQL.
+
+1. Push seluruh isi folder ini ke repository GitHub.
+2. Di Railway buat New Project -> Deploy from GitHub Repo.
+3. Pilih repository SIMRS.
+4. Tambahkan MySQL service pada project Railway.
+5. Pada service web, tambahkan environment variable dari MySQL:
+   DB_HOST = MYSQLHOST
+   DB_PORT = MYSQLPORT
+   DB_NAME = MYSQLDATABASE
+   DB_USER = MYSQLUSER
+   DB_PASS = MYSQLPASSWORD
+   (Railway juga dapat mereferensikan variable service MySQL secara langsung.)
+6. Import database/simrs_permata_asri.sql ke MySQL Railway.
+7. Jalankan update_database.php sekali setelah database dasar tersedia.
+8. Di service web -> Settings -> Networking -> Generate Domain.
+9. Link publik staff menjadi:
+   https://<domain-railway>/login.php
+10. Link publik pasien menjadi:
+   https://<domain-railway>/patient/
+
+Setelah setup selesai, sebaiknya batasi/hapus akses publik ke:
+  install_database.php
+  update_database.php
+  setup_check.php
+
+C. ALTERNATIF GRATIS - INFINITYFREE
+-----------------------------------
+InfinityFree mendukung PHP + MySQL dan memberikan subdomain publik.
+Upload seluruh project ke folder htdocs milik hosting, import file SQL melalui
+phpMyAdmin hosting, lalu sesuaikan database credential di config/database.php
+atau gunakan environment variable bila hosting mendukungnya.
+
+CATATAN VERCEL / NETLIFY
+------------------------
+Aplikasi ini bukan static site; ia memakai PHP dan MySQL. Untuk itu gunakan
+hosting yang memang menjalankan PHP + database, atau platform container seperti
+Railway. Jangan upload hanya file PHP ke Vercel/Netlify dan berharap database
+XAMPP lokal ikut dapat diakses dari internet.

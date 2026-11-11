@@ -1,0 +1,26 @@
+RUMAH SAKIT PERMATA ASRI - AKUN DEMO FINAL
+
+Administrator SIMRS
+novella / permata123
+
+Dokter
+andi / andi123          - dr. Andi Pratama (PEG-DOK-001)
+maya / maya123          - dr. Maya Kusuma, Sp.PD (PEG-DOK-002)
+raka / raka123          - dr. Raka Mahendra (PEG-DOK-003)
+nadia / nadia123        - dr. Nadia Putri, Sp.PD (PEG-DOK-004)
+salsabila / salsabila123 - dr. Salsabila Rahman, Sp.A (PEG-DOK-005)
+bima / bima123          - dr. Bima Aditya, Sp.B (PEG-DOK-006)
+citra / citra123        - dr. Citra Maharani, Sp.OG (PEG-DOK-007)
+
+Perawat / Unit Penunjang
+intan / intan123        - Ns. Intan Permata, S.Kep
+dewi.lab / dewi123      - Dewi Lestari, A.Md.AK
+rizky.rad / rizky123    - Rizky Maulana, A.Md.Rad
+rani.igd / rani123      - Ns. Rani Puspita, S.Kep
+rika.admisi / rika123   - Rika Andriani, A.Md.Kes
+sinta.rm / sinta123     - Sinta Maharani, A.Md.RMIK
+sari.farmasi / sari123  - apt. Sari Dewi, S.Farm.
+
+Catatan:
+Akun dokter hanya dapat melihat rekam medis pasien yang registrasinya ditujukan kepada dokter tersebut.
+Administrator SIMRS dan Petugas Rekam Medis dapat melihat seluruh rekam medis sesuai kewenangan administratif.

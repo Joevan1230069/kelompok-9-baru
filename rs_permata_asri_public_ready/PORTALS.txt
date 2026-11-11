@@ -1,0 +1,13 @@
+RUMAH SAKIT PERMATA ASRI
+
+1. STAFF PORTAL
+   login.php
+   Digunakan oleh Admin, Dokter, Perawat, IGD, Lab, Radiologi, Farmasi, Admisi,
+   dan Rekam Medis.
+
+2. PATIENT REGISTRATION PORTAL
+   patient/
+   Digunakan pasien tanpa login pegawai untuk mengirim pendaftaran kunjungan.
+
+Data pasien yang masuk dari portal pasien tetap muncul pada menu Registrasi
+Online di akun Admin/Admisi karena keduanya menggunakan tabel database yang sama.

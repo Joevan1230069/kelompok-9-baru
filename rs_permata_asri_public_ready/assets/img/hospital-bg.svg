@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeeff"/>
+      <stop offset="1" stop-color="#f7fbff"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8eef7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1330" cy="160" r="88" fill="#fff" opacity=".55"/>
+  <path d="M0 790c260-90 460-65 690 0s470 72 910-20v230H0Z" fill="#dcebdc"/>
+  <path d="M0 850c330-75 560-16 795 30s462 58 805-18v138H0Z" fill="#cfe3d2"/>
+  <g opacity=".95">
+    <rect x="350" y="280" width="900" height="500" rx="18" fill="url(#wall)" stroke="#ced8e6" stroke-width="3"/>
+    <rect x="245" y="420" width="230" height="360" rx="14" fill="#f7f9fd" stroke="#ced8e6" stroke-width="3"/>
+    <rect x="1125" y="420" width="230" height="360" rx="14" fill="#f7f9fd" stroke="#ced8e6" stroke-width="3"/>
+    <rect x="655" y="490" width="290" height="290" rx="16" fill="#eaf1f9"/>
+    <rect x="730" y="590" width="140" height="190" rx="8" fill="#bcd0e7"/>
+    <rect x="510" y="340" width="580" height="100" rx="12" fill="#2f67db"/>
+    <text x="800" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#fff">RUMAH SAKIT PERMATA ASRI</text>
+    <g fill="#b8d0e8">
+      <rect x="420" y="500" width="95" height="75" rx="7"/><rect x="545" y="500" width="95" height="75" rx="7"/>
+      <rect x="960" y="500" width="95" height="75" rx="7"/><rect x="1085" y="500" width="95" height="75" rx="7"/>
+      <rect x="420" y="610" width="95" height="75" rx="7"/><rect x="545" y="610" width="95" height="75" rx="7"/>
+      <rect x="960" y="610" width="95" height="75" rx="7"/><rect x="1085" y="610" width="95" height="75" rx="7"/>
+      <rect x="285" y="500" width="70" height="68" rx="6"/><rect x="365" y="500" width="70" height="68" rx="6"/>
+      <rect x="1165" y="500" width="70" height="68" rx="6"/><rect x="1245" y="500" width="70" height="68" rx="6"/>
+    </g>
+    <rect x="760" y="460" width="80" height="80" rx="18" fill="#fff" stroke="#d9e1eb"/>
+    <path d="M793 477h14v16h16v14h-16v16h-14v-16h-16v-14h16Z" fill="#2f67db"/>
+  </g>
+  <g fill="#80b77e">
+    <circle cx="155" cy="730" r="72"/><circle cx="95" cy="760" r="50"/><circle cx="1500" cy="730" r="76"/><circle cx="1425" cy="770" r="52"/>
+  </g>
+  <g fill="#6b8f63">
+    <rect x="140" y="730" width="18" height="120" rx="8"/><rect x="1480" y="730" width="18" height="120" rx="8"/>
+  </g>
+  <path d="M585 1000c43-136 124-202 215-202s176 65 220 202Z" fill="#d7dce3"/>
+</svg>
